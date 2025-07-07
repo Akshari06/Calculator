@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="calculator">
@@ -37,12 +39,14 @@
                     <input type="button" value="+" onclick="calc.display.value += '+'" class="operator">
                 </div>
                 <div>
-    <input type="button" value="%" onclick="calc.display.value += '%'" class="operator">
-    <input type="button" value="0" onclick="calc.display.value += '0'">
-    <input type="button" value="=" onclick="calc.display.value = eval(calc.display.value.replace(/(\d+)%/g, '($1/100)'))" class="equal operator">
-</div>
+                    <input type="button" value="%" onclick="calc.display.value += '%'" class="operator">
+                    <input type="button" value="0" onclick="calc.display.value += '0'">
+                    <input type="button" value="=" onclick="calc.display.value = eval(calc.display.value.replace(/(\d+)%/g, '($1/100)'))" class="equal operator">
+                </div>
+
             </form>
         </div>
     </div>
 </body>
+
 </html>
